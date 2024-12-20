@@ -1,0 +1,39 @@
+\documentclass{report}
+\usepackage[toc,page]{appendix}
+\usepackage{lipsum}
+\usepackage[Lenny]{fncychap}
+\input{macros}
+%\everymath{\displaystyle}
+\allowdisplaybreaks
+\usepackage{tikz}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{titletoc}
+\usepackage{float}
+\usepackage{zi4}
+\definecolor{brickred}{rgb}{0.8, 0.25, 0.33}
+
+\newtheorem{lemma}{Lemma}[chapter]
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{corollary}{Corollary}[chapter]
+\newtheorem{definition}{Definition}[chapter]
+
+\title{\textsc{Problems and Solutions\footnote{These solutions 
+stem from my own self-study, and they have not been subjected to 
+the usual scrutiny reserved for publication.}:} \\ 
+\textit{Elements of Causal Inference: Foundations and Learning Algorithms} \\ 
+~\\ \large Jonas Peters, Dominik Janzing, Bernhard Schölkopf}
+\author{Alan Sun}
+\date{}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+\setcounter{chapter}{2}
+\input{chpts/chpt3}
+
+
+\end{document}
